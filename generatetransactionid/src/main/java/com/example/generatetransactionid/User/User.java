@@ -1,36 +1,19 @@
-package com.example.user;
+package com.example.generatetransactionid.User;
 
-import org.springframework.stereotype.Component;
-
-
-
-@Component
 public class User {
 
-    private String transactionId;
     private String cardNo;
     private String amount;
     private String transactionTs;
-
-
 
     public User(){
 
     }
 
-    public User(String transactionId, String cardNo, String amount, String transactionTs) {
-        this.transactionId = transactionId;
+    public User(String cardNo, String amount, String transactionTs) {
         this.cardNo = cardNo;
         this.amount = amount;
-        this.transactionId = transactionTs;
-    }
-
-    public String getTransactionId() {
-        return transactionId;
-    }
-
-    public void setTransactionId(String transactionId) {
-        this.transactionId = transactionId;
+        this.transactionTs = transactionTs;
     }
 
     public String getCardNo() {

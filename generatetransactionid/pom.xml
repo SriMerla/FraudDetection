@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>demospringjms</artifactId>
+    <artifactId>generatetransactionid</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demospringjms</name>
+    <name>generatetransactionid</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -56,14 +56,6 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.jms</groupId>

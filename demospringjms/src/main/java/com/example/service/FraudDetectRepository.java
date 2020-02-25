@@ -14,10 +14,12 @@ public interface FraudDetectRepository  {
 
      public void insert(User user);
 
-     public void delete(int cardNo);
+     public void delete(String cardNo);
 
-     public int findBycardNo(int cardNo);
+     public String findBycardNo(String cardNo);
 
      public List<User> findAll();
+
+     public boolean findBycardNoInLasTenMinutes(String cardNo);
 
 }

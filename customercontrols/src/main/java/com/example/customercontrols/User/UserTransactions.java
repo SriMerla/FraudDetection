@@ -1,28 +1,24 @@
-package com.example.user;
+package com.example.customercontrols.User;
 
 import org.springframework.stereotype.Component;
 
-
-
 @Component
-public class User {
+public class UserTransactions {
 
     private String transactionId;
     private String cardNo;
     private String amount;
-    private String transactionTs;
+    private String transactionTS;
 
-
-
-    public User(){
-
-    }
-
-    public User(String transactionId, String cardNo, String amount, String transactionTs) {
+    public UserTransactions(String transactionId, String cardNo, String amount, String transactionTS) {
         this.transactionId = transactionId;
         this.cardNo = cardNo;
         this.amount = amount;
-        this.transactionId = transactionTs;
+        this.transactionTS = transactionTS;
+    }
+
+    public UserTransactions() {
+
     }
 
     public String getTransactionId() {
@@ -49,11 +45,11 @@ public class User {
         this.amount = amount;
     }
 
-    public String getTransactionTs() {
-        return transactionTs;
+    public String getTransactionTS() {
+        return transactionTS;
     }
 
-    public void setTransactionTs(String transactionTs) {
-        this.transactionTs = transactionTs;
+    public void setTransactionTS() {
+        this.transactionTS = transactionTS;
     }
 }
